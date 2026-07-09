@@ -12,6 +12,7 @@ public class Student {
     private Long id;
     private String name;
     private String email;
+    // hello
 
     public Long getId() {
         return id;
@@ -36,4 +37,5 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
