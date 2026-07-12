@@ -4,7 +4,7 @@ public class UpdateStudentRequestDto {
     private String name;
     private int age;
     private String subject;
-    private String rollNo;
+    private Integer rollNo;
 
     public String getName() {
         return name;
@@ -30,11 +30,11 @@ public class UpdateStudentRequestDto {
         this.subject = subject;
     }
 
-    public String getRollNo() {
+    public Integer getRollNo() {
         return rollNo;
     }
 
-    public void setRollNo(String rollNo) {
+    public void setRollNo(Integer rollNo) {
         this.rollNo = rollNo;
     }
 }

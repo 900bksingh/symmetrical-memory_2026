@@ -16,18 +16,18 @@ public class Student {
     private String email;
     private int age;
     private String subject;
-    private String rollNo;
+    private Integer rollNo;
     private Boolean deleted;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
 
 
-    public String getRollNo() {
+    public Integer getRollNo() {
         return rollNo;
     }
 
-    public void setRollNo(String rollNo) {
+    public void setRollNo(Integer rollNo) {
         this.rollNo = rollNo;
     }
 
