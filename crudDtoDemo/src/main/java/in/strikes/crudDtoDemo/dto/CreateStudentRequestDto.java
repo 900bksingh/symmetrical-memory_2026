@@ -1,10 +1,19 @@
 package in.strikes.crudDtoDemo.dto;
 
-public class RequestDto {
+public class CreateStudentRequestDto {
     private String name;
     private String email;
     private int age;
     private String subject;
+    private String rollNo;
+
+    public String getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(String rollNo) {
+        this.rollNo = rollNo;
+    }
 
     public String getName() {
         return name;
