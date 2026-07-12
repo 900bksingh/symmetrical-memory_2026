@@ -5,6 +5,7 @@ import in.strikes.crudDtoDemo.dto.CreateStudentResponseDto;
 import in.strikes.crudDtoDemo.dto.UpdateStudentRequestDto;
 import in.strikes.crudDtoDemo.dto.UpdateStudentResponseDto;
 import in.strikes.crudDtoDemo.entity.Student;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import in.strikes.crudDtoDemo.service.StudentService;
 import java.util.List;
 import java.util.Optional;
 
+// validations --> spring-boot-starter-validation
 @RestController
 @RequestMapping("/api/students")
 public class StudentController {
@@ -30,7 +32,7 @@ public class StudentController {
 
     //create
     @PostMapping("/create")
-    public ResponseEntity<CreateStudentResponseDto> create(@RequestBody CreateStudentRequestDto studentRequestDto){
+    public ResponseEntity<CreateStudentResponseDto> create(@Valid @RequestBody CreateStudentRequestDto studentRequestDto){
         CreateStudentResponseDto createStudent = studentService.createStudent(studentRequestDto);
 
 //        return ResponseEntity.ok(studentResponse);

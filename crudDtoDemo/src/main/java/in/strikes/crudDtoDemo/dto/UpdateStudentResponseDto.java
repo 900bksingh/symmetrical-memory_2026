@@ -9,7 +9,7 @@ public class UpdateStudentResponseDto {
     private int age;
     private String subject;
     private String message;
-    private String rollNo;
+    private Integer rollNo;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
@@ -61,11 +61,11 @@ public class UpdateStudentResponseDto {
         this.message = message;
     }
 
-    public String getRollNo() {
+    public Integer getRollNo() {
         return rollNo;
     }
 
-    public void setRollNo(String rollNo) {
+    public void setRollNo(Integer rollNo) {
         this.rollNo = rollNo;
     }
 
